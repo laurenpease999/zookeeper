@@ -7,10 +7,12 @@ var packageData = require('./package.json');
 var filename = [packageData.name, packageData.version, 'js'];
 
 module.exports = {
-    entry: './js/app.js',
+    mode: "development",
+    entry: path.resolve(__dirname, 'app/app.js'),
     output: {
         path: path.resolve(__dirname, 'public'),
         filename: packageData.name + '.' + packageData.version + '.js',
+        publicPath: '/'
     },
     module: {
       rules: [
@@ -19,12 +21,15 @@ module.exports = {
           exclude: /(node_modules)/,
           loader: 'babel-loader',
           query: {
-			presets: ['@babel/preset-env', '@babel/react']
+			      presets: ['@babel/preset-env', '@babel/react']
           }
         }
       ]
     },
     resolve: {
         extensions: ['.js', '.jsx']
+    },
+    devServer: {
+      historyApiFallback: true 
     }
 }
