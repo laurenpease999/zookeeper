@@ -1,7 +1,7 @@
 const App = React.createElement(
     "div",
     {},
-    React.createElement("h1", {}, "Adopt an Octopus")
+    React.createElement("h1", {}, "Zookeeper")
 );
 
 ReactDOM.render(

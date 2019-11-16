@@ -1,11 +1,16 @@
 * {
     box-sizing: border-box;
-    color: #333;
+    color: #000;
   }
   
   body {
-    background-color: #81a69b;
-    background-image: url(./assets/background.png);
+    background: url(./assets/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    background-color: #fff;
     margin: 0;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
@@ -87,7 +92,6 @@
   header > a,
   #root > div > h1 {
     display: inline-block;
-    background-image: url(./assets/background.png);
     width: 279px;
     height: 76px;
     overflow: hidden;
