@@ -1,0 +1,27 @@
+{
+  "name": "zookeeper",
+  "version": "1.0.0",
+  "description": "critter adoption",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier \"src/**/*.{js.html}\" --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laurenpease999/zookeeper.git"
+  },
+  "keywords": [
+    "'React'"
+  ],
+  "author": "Lauren Pease",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laurenpease999/zookeeper/issues"
+  },
+  "homepage": "https://github.com/laurenpease999/zookeeper#readme"
+}
