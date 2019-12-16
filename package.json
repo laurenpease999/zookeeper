@@ -2,8 +2,8 @@
   "name": "zookeeper",
   "version": "1.0.0",
   "description": "critter adoption",
-  "main": "dist/main/app.js",
-  "source": "app.js",
+  "main": "dist/main/App.js",
+  "source": "src/App.js",
   "targets": {
     "main": {
       "node": [
