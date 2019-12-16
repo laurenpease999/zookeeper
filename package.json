@@ -2,17 +2,30 @@
   "name": "zookeeper",
   "version": "1.0.0",
   "description": "critter adoption",
-  "main": "app.js",
-  "dependencies": {},
+  "main": "dist/main/app.js",
+  "source": "app.js",
+  "targets": {
+    "main": {
+      "node": [
+        "^12.13.1"
+      ]
+    }
+  },
+  "dependencies": {
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
+  },
   "devDependencies": {
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.7.0",
+    "parcel-bundler": "^1.12.4",
     "prettier": "^1.19.1"
   },
   "scripts": {
+    "dev": "parcel src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier \"src/**/*.{js.html}\" --write",
-    "lint": "esline \"src/**/*/.{js.jsx}\"" 
+    "lint": "esline \"src/**/*/.{js.jsx}\""
   },
   "repository": {
     "type": "git",
