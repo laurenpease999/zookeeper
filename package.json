@@ -11,6 +11,9 @@
       ]
     }
   },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ],
   "dependencies": {
     "@frontendmasters/pet": "^1.0.3",
     "acorn": "^7.1.0",
@@ -19,6 +22,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
+    "cross-env": "^7.0.0",
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-import": "^2.19.1",
@@ -31,6 +35,7 @@
   },
   "scripts": {
     "dev": "parcel src/index.html",
+    "dev:mock": "cross-env PET_MOCK=mock npm run dev", 
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier \"src/**/*.{js.html}\" --write",
     "lint": "esline \"src/**/*/.{js.jsx}\""
