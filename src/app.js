@@ -7,9 +7,8 @@ import Details from './components/Details.js';
 const App = () => {
     return (
         <div>
-            <h1>Available for Adoption</h1>
             <header>
-                <Link to="/">Adopt Me</Link>
+                <div className="adoption"><Link to="/">Available for Adoption</Link></div>
             </header>
             <Router>
                 <SearchParams path="/" />
